@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="/CSS/styles.css" rel="stylesheet">
 </head>
+
 <body>
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="/IMAGES/Diego_Alexander_Ramos_Sanchez_creame_un_logo_que_trate_sobre_anime_c626aa10-aece-4ab0-b896-983423aa4346.png" height="80" alt="Logo" class="logo">
+                    <span class="navbar-title">Animech</span> <!-- Título agregado aquí -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#inicio">Inicio</a>
+                            <a class="nav-link" href="#inicio"><i class="fas fa-home"></i> Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#animes">Animes</a>
-                        </li>
-                    </ul>
-                    <a class="navbar-brand mx-auto" href="#"><img src="/placeholder.svg?height=50&width=50" alt="Logo" class="logo"></a>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#noticias">Noticias</a>
+                            <a class="nav-link" href="#jujutsu-kaisen"><i class="fas fa-book-open"></i> Historia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
+                            <a class="nav-link" href="#animes"><i class="fas fa-film"></i> Animes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#noticias"><i class="fas fa-newspaper"></i> Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto"><i class="fas fa-envelope"></i> Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -45,13 +53,43 @@
             </div>
         </section>
 
-        <section id="animes" class="animes">
+        <section id="jujutsu-kaisen" class="jujutsu-kaisen text-white y-10"
+            style="background-color: rgba(0, 0, 0, 0.767);">
+            <div class="container">
+                <h2>Historia de Jujutsu Kaisen</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4">
+                        <img src="/IMAGES/anime-8801333_1280.png" style="border-radius: 10px;" class="img-fluid"
+                            alt="Jujutsu Kaisen" />
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <p style="text-align: justify;">
+                            Jujutsu Kaisen es una popular serie de manga escrita e ilustrada por Gege
+                            Akutami, que ha ganado reconocimiento tanto en Japón como a nivel internacional.
+                            La trama sigue a Yuji Itadori, un joven estudiante de secundaria que, tras un
+                            encuentro desafortunado con una poderosa maldición, se ve obligado a unirse a
+                            una organización de hechiceros conocida como la Jujutsu High School. Su misión
+                            es luchar contra maldiciones y proteger a la humanidad. La historia comienza cuando
+                            Yuji consume un objeto maldito: el dedo de Ryomen Sukuna, un antiguo espíritu
+                            malvado que busca recuperar su forma completa. A partir de ese momento, Yuji
+                            adquiere habilidades especiales y se convierte en un objetivo tanto para las
+                            maldiciones como para los hechiceros. Junto a sus nuevos amigos, Megumi
+                            Fushiguro y Nobara Kugisaki, y su mentor Satoru Gojo.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="animes" class="animes" style="background-color: rgba(255, 255, 255, 0.568);">
             <div class="container">
                 <h2>Animes Destacados</h2>
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="/placeholder.svg?height=300&width=400" class="card-img-top" alt="Anime 1">
+                            <img src="/IMAGES/ai-generated-8499583_1280.png" height=400 width=400 class="card-img-top"
+                                alt="Anime 1">
                             <div class="card-body">
                                 <h5 class="card-title">Título del Anime 1</h5>
                                 <p class="card-text">Descripción breve del anime 1.</p>
@@ -60,7 +98,8 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="/placeholder.svg?height=300&width=400" class="card-img-top" alt="Anime 2">
+                            <img src="/IMAGES/ai-generated-8545560_1280.jpg" height=400 width=400 class="card-img-top"
+                                alt="Anime 2">
                             <div class="card-body">
                                 <h5 class="card-title">Título del Anime 2</h5>
                                 <p class="card-text">Descripción breve del anime 2.</p>
@@ -69,7 +108,40 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="/placeholder.svg?height=300&width=400" class="card-img-top" alt="Anime 3">
+                            <img src="/IMAGES/ai-generated-8665896_1280.jpg" height=400 width=400 class="card-img-top"
+                                alt="Anime 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del Anime 3</h5>
+                                <p class="card-text">Descripción breve del anime 3.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/IMAGES/ai-generated-8499583_1280.png" height=400 width=400 class="card-img-top"
+                                alt="Anime 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del Anime 1</h5>
+                                <p class="card-text">Descripción breve del anime 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/IMAGES/ai-generated-8545560_1280.jpg" height=400 width=400 class="card-img-top"
+                                alt="Anime 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del Anime 2</h5>
+                                <p class="card-text">Descripción breve del anime 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/IMAGES/ai-generated-8665896_1280.jpg" height=400 width=400 class="card-img-top"
+                                alt="Anime 3">
                             <div class="card-body">
                                 <h5 class="card-title">Título del Anime 3</h5>
                                 <p class="card-text">Descripción breve del anime 3.</p>
@@ -80,13 +152,14 @@
             </div>
         </section>
 
-        <section id="noticias" class="noticias">
+        <section id="noticias" class="noticias text-white y-10" style="background-color: rgba(0, 0, 0, 0.767);">
             <div class="container">
                 <h2>Últimas Noticias</h2>
                 <div class="row">
                     <div class="col-md-6 mb-4">
                         <div class="card">
-                            <img src="/placeholder.svg?height=300&width=400" class="card-img-top" alt="Noticia 1">
+                            <img src="/IMAGES/anime-8647945_1280.jpg" height=400 width=400 class="card-img-top"
+                                alt="Noticia 1">
                             <div class="card-body">
                                 <h5 class="card-title">Título de la Noticia 1</h5>
                                 <p class="card-text">Resumen de la noticia 1 sobre anime.</p>
@@ -95,7 +168,8 @@
                     </div>
                     <div class="col-md-6 mb-4">
                         <div class="card">
-                            <img src="/placeholder.svg?height=300&width=400" class="card-img-top" alt="Noticia 2">
+                            <img src="/IMAGES/anime-8801333_1280.png" height=400 width=400 class="card-img-top"
+                                alt="Noticia 2">
                             <div class="card-body">
                                 <h5 class="card-title">Título de la Noticia 2</h5>
                                 <p class="card-text">Resumen de la noticia 2 sobre anime.</p>
@@ -106,35 +180,50 @@
             </div>
         </section>
 
-        <section id="contacto" class="contacto">
-            <div class="container">
-                <h2>Contáctanos</h2>
-                <form>
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="3" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
-        </section>
+        <button id="contactButton" class="contact-btn" data-bs-toggle="modal" data-bs-target="#contactModal">
+            <i class="fas fa-envelope"></i>
+        </button>
     </main>
 
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2023 Anime Landing Page. Todos los derechos reservados.</p>
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contáctanos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+
+    <footer class="text-white py-4" style="background-color: black;">
+        <div class="container text-center">
+            <div class="border-top pt-3">
+                <p>&copy; 2024 Anime Landing Page. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="/JS/script.js"></script>
 </body>
+
 </html>
