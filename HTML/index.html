@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#animes">Animes</a>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand mx-auto" href="#"><img src="/placeholder.svg?height=50&width=50" alt="Logo" class="logo"></a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#noticias">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>Bienvenido al Mundo del Anime</h1>
+                <p>Descubre las mejores series y películas de anime</p>
+            </div>
+        </section>
+
+        <section id="animes" class="animes">
+            <div class="container">
+                <h2>Animes Destacados</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/placeholder.svg?height=300&width=400" class="card-img-top" alt="Anime 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del Anime 1</h5>
+                                <p class="card-text">Descripción breve del anime 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/placeholder.svg?height=300&width=400" class="card-img-top" alt="Anime 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del Anime 2</h5>
+                                <p class="card-text">Descripción breve del anime 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/placeholder.svg?height=300&width=400" class="card-img-top" alt="Anime 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del Anime 3</h5>
+                                <p class="card-text">Descripción breve del anime 3.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="noticias" class="noticias">
+            <div class="container">
+                <h2>Últimas Noticias</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="/placeholder.svg?height=300&width=400" class="card-img-top" alt="Noticia 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Título de la Noticia 1</h5>
+                                <p class="card-text">Resumen de la noticia 1 sobre anime.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="/placeholder.svg?height=300&width=400" class="card-img-top" alt="Noticia 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Título de la Noticia 2</h5>
+                                <p class="card-text">Resumen de la noticia 2 sobre anime.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2023 Anime Landing Page. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
